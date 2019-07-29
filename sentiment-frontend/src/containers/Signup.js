@@ -1,4 +1,5 @@
 import React from 'react';
+import './Signup.css'
 import { Redirect } from 'react-router-dom';
 import SearchBar from './SearchBar'
 
@@ -55,15 +56,15 @@ class Signup extends React.Component {
     render(){
         return (
             <div>
-                Register User
-                <form className="form-input" onSubmit={this.handleSubmit}>
-                    <input type="text" placeholder="first name" name='first_name' onChange={this.handleChange}></input><br/>
-                    <input type="text" placeholder="last name" name='last_name' onChange={this.handleChange}></input><br/>
-                    <input type="text" placeholder="username or email" name='username' onChange={this.handleChange}></input><br/>
-                    <input type="password" placeholder="password" name='password' onChange={this.handleChange}></input><br/>
-                    <input type="text" placeholder="bio" name='bio' onChange={this.handleChange}></input><br/>
-                    <input type="text" placeholder="link to image" name='avatar' onChange={this.handleChange}></input><br/>
-                    <button>Submit</button>
+                <h4>Register User</h4>
+                <form className="form-input" onSubmit={this.handleSubmit}><br/>
+                    <input className="first_name" type="text" placeholder="first name" name='first_name' onChange={this.handleChange}></input><br/>
+                    <input className="last_name" type="text" placeholder="last name" name='last_name' onChange={this.handleChange}></input><br/>
+                    <input className="user_email" type="text" placeholder="username or email" name='username' onChange={this.handleChange}></input><br/>
+                    <input className="password" type="password" placeholder="password" name='password' onChange={this.handleChange}></input><br/>
+                    <input className="bio" type="text" placeholder="bio" name='bio' onChange={this.handleChange}></input><br/>
+                    <input className="img" type="text" placeholder="link to image" name='avatar' onChange={this.handleChange}></input><br/>
+                    <button className="Signup-btn">Submit</button><br/><br/>
                 </form>
             </div>
           );
