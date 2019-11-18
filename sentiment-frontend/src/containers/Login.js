@@ -66,7 +66,7 @@ class Login extends React.Component {
             <div>
                 { this.state.loggedIn === false ?
                 <div>
-                    <h4>Already a User? Login</h4>
+                    <h4>Already a User? Login or <a href="http://localhost:3001">Register</a></h4>
                     <form className="form-input" onSubmit={this.handleSubmit}><br/>
                         <input className='usrname' type="text" placeholder="username or email" name='username' onChange={this.handleChange}></input><br/>
                         <input className='pssword' type="password" placeholder="password" name='password' onChange={this.handleChange}></input><br/>
